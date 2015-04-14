@@ -41,6 +41,20 @@
 	</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="js/script.js"></script>
+<script type="text/javascript">
+	jQuery(function($){
+		$('.ba-box').hover(
+				function() {
+					var id = $( this ).data('text');
+					$('#'+id).addClass('ba-show');
+					$('[data-text="'+id+'"]').addClass('ba-hover');
+				}, function() {
+					var id = $( this ).data('text');
+					$('#'+id).removeClass('ba-show');
+					$('[data-text="'+id+'"]').removeClass('ba-hover');
+				}
+		);
+	});
+</script>
 </body>
 </html>
