@@ -1,0 +1,232 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #ffffff;
+  font-family: sans-serif; }
+
+.wrap {
+  max-width: 700px;
+  margin: auto;
+  padding-top: 50px; }
+
+.ba-infographic {
+  position: relative;
+  height: 0;
+  padding-bottom: 40%; }
+  .ba-infographic .ba-box {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    background: #405C7E no-repeat 50% 60%;
+    z-index: 10;
+    cursor: pointer;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-transition: background-color 0.2s ease-in;
+    -o-transition: background-color 0.2s ease-in;
+    -webkit-transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s ease-in; }
+    .ba-infographic .ba-box:hover, .ba-infographic .ba-box.ba-hover {
+      background-color: #2D3E55; }
+  .ba-infographic [class*="ba-arr-"]:after, .ba-infographic [class*="ba-arr-"]:before {
+    display: block;
+    position: absolute;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border: solid transparent;
+    -moz-transition: border-color 0.2s ease-in;
+    -o-transition: border-color 0.2s ease-in;
+    -webkit-transition: border-color 0.2s ease-in;
+    transition: border-color 0.2s ease-in; }
+  .ba-infographic .ba-arr-t:after,
+  .ba-infographic .ba-arr-b:after {
+    border-width: 12px 20px;
+    left: 50%;
+    margin-left: -20px; }
+  .ba-infographic .ba-arr-t:after {
+    border-bottom-color: #405C7E;
+    bottom: 100%; }
+  .ba-infographic .ba-arr-t:hover:after, .ba-infographic .ba-arr-t.ba-hover:after {
+    border-bottom-color: #2D3E55; }
+  .ba-infographic .ba-arr-b:after {
+    border-top-color: #405C7E;
+    top: 100%; }
+  .ba-infographic .ba-arr-b:hover:after, .ba-infographic .ba-arr-b.ba-hover:after {
+    border-top-color: #2D3E55; }
+  .ba-infographic .ba-arr-r.ba-box-center:before {
+    border-width: 20px 12px;
+    border-left-color: #fff;
+    left: -3px;
+    top: 50%;
+    margin-top: -20px; }
+  .ba-infographic .ba-arr-r:after {
+    border-width: 20px 12px;
+    left: 100%;
+    top: 50%;
+    margin-top: -20px;
+    border-left-color: #405C7E; }
+  .ba-infographic .ba-arr-r:hover:after, .ba-infographic .ba-arr-r.ba-hover:after {
+    border-left-color: #2D3E55; }
+  .ba-infographic .ba-box-center {
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .ba-infographic .prov {
+    left: 0;
+    top: 0;
+    background-image: url(../img/prov.png); }
+  .ba-infographic .lde {
+    left: 0;
+    bottom: 0;
+    background-image: url(../img/lde.png); }
+  .ba-infographic .offert {
+    left: 12%;
+    z-index: 14;
+    background-image: url(../img/offert.png); }
+    .ba-infographic .offert:before {
+      display: none; }
+  .ba-infographic .bestallning {
+    left: 23.5%;
+    z-index: 13;
+    background-image: url(../img/bestallning.png); }
+  .ba-infographic .utfallsprov {
+    left: 35%;
+    z-index: 12;
+    background-image: url(../img/utfallsprov.png); }
+  .ba-infographic .godkannande {
+    left: 46.5%;
+    z-index: 11;
+    background-image: url(../img/godkannande.png); }
+  .ba-infographic .sproduktion {
+    left: 58%;
+    z-index: 10;
+    background-image: url(../img/sproduktion.png); }
+  .ba-infographic .flyg {
+    left: 72%;
+    top: 0;
+    background-image: url(../img/flyg.png); }
+  .ba-infographic .sjo {
+    left: 72%;
+    bottom: 0;
+    background-image: url(../img/sjo.png); }
+  .ba-infographic .leverans {
+    right: 0;
+    -moz-box-shadow: 0 0 0 3px #E8471E;
+    -webkit-box-shadow: 0 0 0 3px #E8471E;
+    box-shadow: 0 0 0 3px #E8471E;
+    background-image: url(../img/leverans.png); }
+  .ba-infographic .lager {
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/lager.png); }
+  .ba-infographic [class*="ba-lines-"] {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+    margin: 35px 36px;
+    border: 2px solid #E8471E; }
+    .ba-infographic [class*="ba-lines-"]:before {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      margin-top: -10px;
+      left: -10px;
+      background: #E8471E;
+      border-radius: 50%; }
+  .ba-infographic .ba-lines-r {
+    right: 0;
+    left: 72%; }
+    .ba-infographic .ba-lines-r:before {
+      left: -11px; }
+  .ba-infographic .ba-lines-l {
+    left: 0;
+    border-width: 1px;
+    margin: 35px; }
+  .ba-infographic .ba-lines-c {
+    border-width: 1px;
+    top: 50%;
+    left: 0;
+    right: 28%;
+    bottom: auto;
+    margin-right: -36px;
+    margin-top: -1px;
+    margin-bottom: 0; }
+    .ba-infographic .ba-lines-c:before {
+      display: none; }
+  .ba-infographic [class*="ba-text-"] {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    height: 72px;
+    left: 12%;
+    right: 30%;
+    padding: 10px;
+    font-size: 13px;
+    color: #50545b;
+    -moz-transition: opacity 0.1s ease-in;
+    -o-transition: opacity 0.1s ease-in;
+    -webkit-transition: opacity 0.1s ease-in;
+    transition: opacity 0.1s ease-in; }
+    .ba-infographic [class*="ba-text-"].ba-show {
+      opacity: 1;
+      visibility: visible; }
