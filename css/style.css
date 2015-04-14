@@ -82,7 +82,6 @@ body {
   .ba-infographic [class*="ba-arr-"]:after, .ba-infographic [class*="ba-arr-"]:before {
     display: block;
     position: absolute;
-    content: " ";
     height: 0;
     width: 0;
     position: absolute;
@@ -94,26 +93,33 @@ body {
     transition: border-color 0.2s ease-in; }
   .ba-infographic .ba-arr-t:after,
   .ba-infographic .ba-arr-b:after {
+    content: " ";
     border-width: 12px 20px;
     left: 50%;
     margin-left: -20px; }
-  .ba-infographic .ba-arr-t:after {
-    border-bottom-color: #405C7E;
-    bottom: 100%; }
-  .ba-infographic .ba-arr-t:hover:after, .ba-infographic .ba-arr-t.ba-hover:after {
-    border-bottom-color: #2D3E55; }
-  .ba-infographic .ba-arr-b:after {
-    border-top-color: #405C7E;
-    top: 100%; }
-  .ba-infographic .ba-arr-b:hover:after, .ba-infographic .ba-arr-b.ba-hover:after {
-    border-top-color: #2D3E55; }
+  .ba-infographic .ba-arr-t {
+    content: " "; }
+    .ba-infographic .ba-arr-t:after {
+      border-bottom-color: #405C7E;
+      bottom: 100%; }
+    .ba-infographic .ba-arr-t:hover:after, .ba-infographic .ba-arr-t.ba-hover:after {
+      border-bottom-color: #2D3E55; }
+  .ba-infographic .ba-arr-b {
+    content: " "; }
+    .ba-infographic .ba-arr-b:after {
+      border-top-color: #405C7E;
+      top: 100%; }
+    .ba-infographic .ba-arr-b:hover:after, .ba-infographic .ba-arr-b.ba-hover:after {
+      border-top-color: #2D3E55; }
   .ba-infographic .ba-arr-r.ba-box-center:before {
+    content: " ";
     border-width: 20px 12px;
     border-left-color: #fff;
     left: -3px;
     top: 50%;
     margin-top: -20px; }
   .ba-infographic .ba-arr-r:after {
+    content: " ";
     border-width: 20px 12px;
     left: 100%;
     top: 50%;
@@ -213,7 +219,7 @@ body {
     margin-bottom: 0; }
     .ba-infographic .ba-lines-c:before {
       display: none; }
-  .ba-infographic [class*="ba-text-"] {
+  .ba-infographic .ba-text {
     opacity: 0;
     position: absolute;
     bottom: 0;
@@ -227,6 +233,131 @@ body {
     -o-transition: opacity 0.1s ease-in;
     -webkit-transition: opacity 0.1s ease-in;
     transition: opacity 0.1s ease-in; }
-    .ba-infographic [class*="ba-text-"].ba-show {
+    .ba-infographic .ba-text.ba-show {
       opacity: 1;
       visibility: visible; }
+  @media (max-width: 800px) {
+    .ba-infographic {
+      height: 510px;
+      width: 210px;
+      padding-bottom: 0;
+      margin-left: auto;
+      margin-right: auto; }
+      .ba-infographic .ba-box {
+        width: 58px;
+        height: 52px;
+        -webkit-background-size: auto 62%;
+        background-size: auto 62%; }
+      .ba-infographic .ba-box-center {
+        left: 50%;
+        top: auto;
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0); }
+      .ba-infographic .ba-arr-t:after,
+      .ba-infographic .ba-arr-b:after {
+        border-width: 15px 8px;
+        left: auto;
+        top: 50%;
+        bottom: auto;
+        margin: -15px 0 0; }
+      .ba-infographic .ba-arr-t:after {
+        left: 100%;
+        border-color: transparent transparent transparent #405C7E; }
+      .ba-infographic .ba-arr-t:hover:after, .ba-infographic .ba-arr-t.ba-hover:after {
+        border-color: transparent transparent transparent #2D3E55; }
+      .ba-infographic .ba-arr-b:after {
+        right: 100%;
+        border-color: transparent #405C7E transparent transparent; }
+      .ba-infographic .ba-arr-b:hover:after, .ba-infographic .ba-arr-b.ba-hover:after {
+        border-color: transparent #2D3E55 transparent transparent; }
+      .ba-infographic .ba-arr-r.ba-box-center:before {
+        border-width: 8px 15px;
+        border-color: #fff transparent transparent transparent;
+        left: 50%;
+        top: -1px;
+        margin: 0 0 0 -15px; }
+      .ba-infographic .ba-arr-r:after {
+        border-width: 8px 15px;
+        left: 50%;
+        top: 100%;
+        margin: 0 0 0 -15px;
+        border-color: #405C7E transparent transparent transparent; }
+      .ba-infographic .ba-arr-r:hover:after, .ba-infographic .ba-arr-r.ba-hover:after {
+        border-color: #2D3E55 transparent transparent transparent; }
+      .ba-infographic .prov {
+        left: auto;
+        right: 0;
+        top: 0; }
+      .ba-infographic .lde {
+        left: 0;
+        bottom: auto;
+        top: 0; }
+      .ba-infographic .offert {
+        top: 12%; }
+      .ba-infographic .bestallning {
+        top: 23.5%; }
+      .ba-infographic .utfallsprov {
+        top: 35%; }
+      .ba-infographic .godkannande {
+        top: 46.5%; }
+      .ba-infographic .sproduktion {
+        top: 58%; }
+      .ba-infographic .flyg {
+        top: 72%;
+        right: 0; }
+      .ba-infographic .sjo {
+        bottom: auto;
+        top: 72%;
+        left: 0; }
+      .ba-infographic .leverans {
+        right: auto;
+        bottom: 0; }
+      .ba-infographic .lager {
+        bottom: 0;
+        left: 0;
+        right: auto; }
+      .ba-infographic [class*="ba-lines-"] {
+        margin: 26px 29px 25px 28px; }
+        .ba-infographic [class*="ba-lines-"]:before {
+          width: 16px;
+          height: 16px;
+          left: 50%;
+          margin: 0 0 0 -8px; }
+      .ba-infographic .ba-lines-r {
+        right: 0;
+        left: 0;
+        top: 72%; }
+        .ba-infographic .ba-lines-r:before {
+          top: -9px; }
+      .ba-infographic .ba-lines-l {
+        left: 0;
+        top: 0;
+        right: 0;
+        border-width: 1px;
+        margin: 25px;
+        bottom: auto;
+        height: 0; }
+        .ba-infographic .ba-lines-l:before {
+          top: -8px; }
+      .ba-infographic .ba-lines-c {
+        border-width: 1px;
+        top: 0;
+        left: 50%;
+        bottom: 28%;
+        right: auto;
+        margin: 26px 0 -26px -1px; }
+      .ba-infographic .ba-text {
+        font-size: 10px;
+        height: auto;
+        width: 100px;
+        right: -40px;
+        left: auto;
+        top: 41%;
+        bottom: auto;
+        padding: 0;
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%); } }
